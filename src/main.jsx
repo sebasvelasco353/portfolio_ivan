@@ -2,10 +2,11 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import { NextUIProvider } from "@nextui-org/react";
+import Header from './components/Header.jsx';
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <NextUIProvider>
-    <div className="sm:text-3xl	">asdfasdfasd</div>
+    <Header />
     <App />
   </NextUIProvider>
 );
