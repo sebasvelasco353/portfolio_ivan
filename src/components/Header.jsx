@@ -1,11 +1,13 @@
 import React from "react";
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
+// Assets
+import IvanLogo from '../assets/Logo.svg';
 
 const Header = () => {
   return (
-    <Navbar>
+    <Navbar className="bg-dark">
       <NavbarBrand>
-        <p className="font-bold text-inherit">ACME</p>
+        <img src={IvanLogo} alt="Ivan's Logo" />
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
