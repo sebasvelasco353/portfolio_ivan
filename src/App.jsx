@@ -1,12 +1,12 @@
-// components
-import Header from './components/Header.jsx'
+import { Checkbox } from "@nextui-org/react";
+import "./App.css";
 
 function App() {
   return (
     <>
-      <Header />
+      <Checkbox />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
