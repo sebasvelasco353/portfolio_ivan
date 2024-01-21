@@ -30,7 +30,7 @@ function App() {
           </div>
         </section>
         <section id="Work">
-
+          <h1 className="text-left text-4xl font-light">Selected <span className="font-semibold">Projects</span></h1>
         </section>
       </main>
       <Footer />
