@@ -9,7 +9,15 @@ export default {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'dark': '#010208',
+        'white': '#ffffff',
+        'gray': '#E3E4E68C',
+        'neutral': '#E3E4E6',
+      },
+    },
+
   },
   darkMode: "class",
   plugins: [nextui()],
