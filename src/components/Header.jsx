@@ -1,11 +1,13 @@
 import React from "react";
 import Logo from '../assets/logo.svg';
+
 import {Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenuItem, NavbarMenu, NavbarContent, NavbarItem, Link} from "@nextui-org/react";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   return (
     <Navbar
+      maxWidth="xl"
       className="bg-dark"
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
