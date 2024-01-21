@@ -11,4 +11,36 @@ section {
   text-align: center;
   min-height: calc(100vh - 4rem);
 }
+.images {
+  display: grid;
+  place-items: center;
+  margin-left: 2rem;
+  grid-gap: 2rem;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "image1 image2"
+    "image1 image3";
+}
+.image1 {
+  border-radius: 1rem;
+  max-width: none;
+  grid-area: image1;
+  width: 19rem;
+  height: 25rem;
+}
+.image2 {
+  border-radius: 1rem;
+  max-width: none;
+  width: 16rem;
+  height: 21rem;
+  grid-area: image2;
+}
+.image3 {
+  border-radius: 1rem;
+  max-width: none;
+  width: 16rem;
+  height: 21rem;
+  grid-area: image3;
+}
 
