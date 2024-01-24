@@ -1,10 +1,13 @@
 import "./App.css";
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
+import Card from './components/Card.jsx';
 
 import imagen1 from './assets/ivan1.png';
 import imagen2 from './assets/ivan2.png';
 import imagen3 from './assets/ivan3.png';
+
+import project1 from './assets/project1.png';
 
 function App() {
   return (
@@ -31,6 +34,27 @@ function App() {
         </section>
         <section id="Work">
           <h1 className="text-left text-4xl font-light">Selected <span className="font-semibold">Projects</span></h1>
+          <Card horizontal>
+            <img className="h-96" src={ project1 } alt="Starkcore / UX & UI Design" />
+            <div className="flex flex-col text-left justify-center">
+              <h3>Starkcore / UX & UI Design</h3>
+              <p className="text-left text-4xl">
+                This is the most important app for the company right now,
+                <span className="font-semibold"> Starkcore is a powerful TMS that provides its services to several companies in the US and Canada.</span>
+              </p>
+            </div>
+          </Card>
+
+          <Card horizontal>
+            <div className="flex flex-col text-left justify-center">
+              <h3>Starkcore / UX & UI Design</h3>
+              <p className="text-left text-4xl">
+                This is the most important app for the company right now,
+                <span className="font-semibold"> Starkcore is a powerful TMS that provides its services to several companies in the US and Canada.</span>
+              </p>
+            </div>
+            <img className="h-96" src={ project1 } alt="Starkcore / UX & UI Design" />
+          </Card>
         </section>
       </main>
       <Footer />
