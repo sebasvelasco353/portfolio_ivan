@@ -3,11 +3,14 @@ import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
 import Card from './components/Card.jsx';
 
+import {Button} from "@nextui-org/react";
+
 import imagen1 from './assets/ivan1.png';
 import imagen2 from './assets/ivan2.png';
 import imagen3 from './assets/ivan3.png';
 
 import project1 from './assets/project1.png';
+import project2 from './assets/project2.png';
 
 function App() {
   return (
@@ -33,27 +36,34 @@ function App() {
           </div>
         </section>
         <section id="Work">
-          <h1 className="text-left text-4xl font-light">Selected <span className="font-semibold">Projects</span></h1>
+          <h1 className="text-left text-4xl mb-20 font-light">Selected <span className="font-semibold">Projects</span></h1>
           <Card horizontal>
             <img className="h-96" src={ project1 } alt="Starkcore / UX & UI Design" />
             <div className="flex flex-col text-left justify-center">
-              <h3>Starkcore / UX & UI Design</h3>
-              <p className="text-left text-4xl">
+              <h3 className="mb-4">Starkcore / UX & UI Design</h3>
+              <p className="text-left text-4xl mb-4">
                 This is the most important app for the company right now,
                 <span className="font-semibold"> Starkcore is a powerful TMS that provides its services to several companies in the US and Canada.</span>
               </p>
+              <p className="text-left mb-4">Website Design</p>
+              <Button className="text-buttonBorder w-44 border-buttonBorder" variant="bordered">
+                VIEW WORK
+              </Button>  
             </div>
           </Card>
-
           <Card horizontal>
             <div className="flex flex-col text-left justify-center">
-              <h3>Starkcore / UX & UI Design</h3>
-              <p className="text-left text-4xl">
-                This is the most important app for the company right now,
-                <span className="font-semibold"> Starkcore is a powerful TMS that provides its services to several companies in the US and Canada.</span>
+              <h3 className="mb-4">Credit App UI & Design System</h3>
+              <p className="text-left text-4xl mb-4">
+                An App made for the multinational company World Shipping,
+                <span className="font-semibold"> the objective of this app was to organize the billing carried out by the truck drivers of the company.</span>
               </p>
+              <p className="text-left mb-4">Web App</p>
+              <Button className="text-buttonBorder w-44 border-buttonBorder" variant="bordered">
+                VIEW WORK
+              </Button>  
             </div>
-            <img className="h-96" src={ project1 } alt="Starkcore / UX & UI Design" />
+            <img className="h-96" src={ project2 } alt="Credit App UI & Design System" />
           </Card>
         </section>
       </main>
