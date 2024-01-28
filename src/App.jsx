@@ -18,6 +18,8 @@ import project6 from './assets/project6.png';
 import project7 from './assets/project7.png';
 import project8 from './assets/project8.png';
 
+import { Link } from "react-router-dom";
+
 function App() {
   const otherProjects = [{
     title: 'DB Conseils',
@@ -85,8 +87,8 @@ function App() {
               </p>
               <p className="text-left mb-4">Website Design</p>
               <Button className="text-buttonBorder w-44 border-buttonBorder" variant="bordered">
-                VIEW WORK
-              </Button>  
+                <Link to="/starkcore">VIEW WORK</Link>
+              </Button>
             </div>
           </Card>
           <Card horizontal>
@@ -99,7 +101,7 @@ function App() {
               <p className="text-left mb-4">Web App</p>
               <Button className="text-buttonBorder w-44 border-buttonBorder" variant="bordered">
                 VIEW WORK
-              </Button>  
+              </Button>
             </div>
             <img className="h-96" src={ project2 } alt="Credit App UI & Design System" />
           </Card>
