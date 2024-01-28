@@ -1,12 +1,56 @@
 import "./App.css";
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
+import Card from './components/Card.jsx';
+
+import {Button} from "@nextui-org/react";
 
 import imagen1 from './assets/ivan1.png';
 import imagen2 from './assets/ivan2.png';
 import imagen3 from './assets/ivan3.png';
 
+import project1 from './assets/project1.png';
+import project2 from './assets/project2.png';
+import project3 from './assets/project3.png';
+import project4 from './assets/project4.png';
+import project5 from './assets/project5.png';
+import project6 from './assets/project6.png';
+import project7 from './assets/project7.png';
+import project8 from './assets/project8.png';
+
 function App() {
+  const otherProjects = [{
+    title: 'DB Conseils',
+    descriptionLight: 'An app made for a consultant company that provides financial and accounting advice in France, ',
+    descriptionDark: ' the app keep track of the learning process of the company.',
+    image: project3
+  }, {
+    title: 'CodeMagic',
+    descriptionLight: 'One of the most important eSports team in france in the mobile gaming area, ',
+    descriptionDark: 'this was the webpage for the champions of BrawlStars in Europe, Codemagic.',
+    image: project4
+  }, {
+    title: 'C&C IMMOBILIER',
+    descriptionLight: 'A beautiful website where you can find your dream house in Paris. ',
+    descriptionDark: 'C&C is a company that sells luxury houses in a exclusive area of France.',
+    image: project5
+  }, {
+    title: 'Advanseez',
+    descriptionLight: 'A French consultancy enterprise specializing in offering advisory solutions has designed this ',
+    descriptionDark: 'online application to elevate the quality of post-purchase support provided to its customer base',
+    image: project6
+  }, {
+    title: 'Kustee',
+    descriptionLight: 'A digital marketplace dedicated to the resale of reconditioned ',
+    descriptionDark: 'second-hand iPhones and various other Apple products.',
+    image: project7
+  }, {
+    title: 'Iphinity',
+    descriptionLight: 'Specializes in the provision of maintenance services ',
+    descriptionDark: 'for specialized electronic equipment.',
+    image: project8
+  }];
+
   return (
     <>
       <Header />
@@ -30,7 +74,47 @@ function App() {
           </div>
         </section>
         <section id="Work">
-          <h1 className="text-left text-4xl font-light">Selected <span className="font-semibold">Projects</span></h1>
+          <h1 className="text-left text-4xl mb-20 font-light">Selected <span className="font-semibold">Projects</span></h1>
+          <Card horizontal>
+            <img className="h-96" src={ project1 } alt="Starkcore / UX & UI Design" />
+            <div className="flex flex-col text-left justify-center">
+              <h3 className="mb-4">Starkcore / UX & UI Design</h3>
+              <p className="text-left text-4xl mb-4">
+                This is the most important app for the company right now,
+                <span className="font-semibold"> Starkcore is a powerful TMS that provides its services to several companies in the US and Canada.</span>
+              </p>
+              <p className="text-left mb-4">Website Design</p>
+              <Button className="text-buttonBorder w-44 border-buttonBorder" variant="bordered">
+                VIEW WORK
+              </Button>  
+            </div>
+          </Card>
+          <Card horizontal>
+            <div className="flex flex-col text-left justify-center">
+              <h3 className="mb-4">Credit App UI & Design System</h3>
+              <p className="text-left text-4xl mb-4">
+                An App made for the multinational company World Shipping,
+                <span className="font-semibold"> the objective of this app was to organize the billing carried out by the truck drivers of the company.</span>
+              </p>
+              <p className="text-left mb-4">Web App</p>
+              <Button className="text-buttonBorder w-44 border-buttonBorder" variant="bordered">
+                VIEW WORK
+              </Button>  
+            </div>
+            <img className="h-96" src={ project2 } alt="Credit App UI & Design System" />
+          </Card>
+          <div className="flex flex-row gap-28 flex-wrap">
+            {otherProjects.map(project => (
+              <Card key={project.title}>
+                <img className="w-80" src={ project.image } alt="Credit App UI & Design System" />
+                <h3 className="mb-4">{ project.title }</h3>
+                <p className="text-left text-4xl mb-4">
+                  { project.descriptionLight }
+                  <span className="font-semibold">{ project.descriptionDark }</span>
+                </p>
+              </Card>
+            ))}
+          </div>
         </section>
       </main>
       <Footer />
