@@ -15,21 +15,28 @@ function Starkcore() {
                     </div>
                     {/* image */}
                 </section>
-                <section>
+                <section className='min-h-full'>
                     <h1>Our Challenge</h1>
-                    <div className="flex flex-row">
-                        <p>As a TMS, this product had a lot of virtues but with the passage of time and the arrival of new personnel to the company, flaws that had not been previously identify in the navigation and the usability began to be noticed</p>
-                        <p>Our main challenge was to create an intuitive and attractive user interface that would satisfy a variety of user needs and preferences, this included designing and developing filters for the commodities, a new tool for the tracking system and re-design the billing process to make it easier for the agents using the app. In a short time of course...</p>
+                    <div className="flex flex-row gap-32">
+                        <p className='flex-1 text-left'>As a TMS, this product had a lot of virtues but with the passage of time and the arrival of new personnel to the company, flaws that had not been previously identify in the navigation and the usability began to be noticed</p>
+                        <p className='flex-1 text-left'>Our main challenge was to create an intuitive and attractive user interface that would satisfy a variety of user needs and preferences, this included designing and developing filters for the commodities, a new tool for the tracking system and re-design the billing process to make it easier for the agents using the app. In a short time of course...</p>
                     </div>
                 </section>
-                {/* image */}
-                <h1>Starkcore</h1>
-                <h2>Shipment View</h2>
-                {/* image */}
+                <section className='min-h-full'>
+                    {/* image */}
+                    <h1>Starkcore</h1>
+                    <h2>Shipment View</h2>
+                    {/* image */}
+                </section>
                 <section>
                     <h1>Strategy</h1>
-                    <p>We used <b>DESIGN SPRINT</b>, In this methodology the product is analyzed and build alongside with the development team, with 5 phases where the first 3 are focused on research and the last 2 on   prototyping and testing.</p>
-                    <div className="flex flex-row">
+                    <p>We used <b>DESIGN SPRINT</b>, In this methodology the product is analyzed and build alongside with the development team, with 5 phases where the first 3 are focused on research and the last 2 on prototyping and testing.</p>
+                    <div className="flex flex-row justify-between">
+                        <p>1. Analysis</p>
+                        <p>2. Sketch</p>
+                        <p>3. Decide</p>
+                        <p>4. Prototype</p>
+                        <p>5. Test</p>
                     </div>
                 </section>
             </main>
