@@ -3,20 +3,20 @@ import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
 import Card from './components/Card.jsx';
 
-import {Button} from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
 
 import imagen1 from './assets/Home/ivan1.png';
 import imagen2 from './assets/Home/ivan2.png';
 import imagen3 from './assets/Home/ivan3.png';
 
-import project1 from './assets/Home/project1.png';
-import project2 from './assets/Home/project2.png';
-import project3 from './assets/Home/project3.png';
-import project4 from './assets/Home/project4.png';
-import project5 from './assets/Home/project5.png';
-import project6 from './assets/Home/project6.png';
-import project7 from './assets/Home/project7.png';
-import project8 from './assets/Home/project8.png';
+import project1 from './assets/Home/Starkcore_Home.png';
+import project2 from './assets/Home/Creditapp_Home.png';
+import project3 from './assets/Home/DBconseils_Home.png';
+import project4 from './assets/Home/Codemagic_Home.png';
+import project5 from './assets/Home/CC_Home.png';
+import project6 from './assets/Home/Advanzees_Home.png';
+import project7 from './assets/Home/Kustee_Home.png';
+import project8 from './assets/Home/Iphinity_Home.png';
 
 import { Link } from "react-router-dom";
 
