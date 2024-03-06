@@ -54,8 +54,8 @@ function Starkcore() {
                         <p><span className='outline'>5.</span> Test</p>
                     </div>
                 </section>
-                <section>
-                <div className='text-left flex mt-12'>
+                <section className='min-h-full'>
+                    <div className='text-left flex mt-12'>
                         <img className='flex-1' src={image4} alt="" />
                         <div className='flex-1'>
                             <h1 className='font-black text-4xl mt-28'>Step 1 - Analysis</h1>
@@ -69,6 +69,8 @@ function Starkcore() {
                             <p className='text-left'>We began by identifying the main users of the app and created a list of functional requirements to start moving the navigation and the workflow of the user. Our approach was always focused on redesigning the app as an user-friendly and adaptive application that makes it as easy as possible for users to create and follow the shipments and quotes that they created.</p>
                         </div>
                     </div>
+                </section>
+                <section className='min-h-full'>
                     <div className='text-left flex mt-12'>
                         <div>
                             <h1 className='font-black text-4xl mt-28'>Interviews & Research</h1>
@@ -77,6 +79,8 @@ function Starkcore() {
                         </div>
                         <img className='flex-1' src={image5} alt="" />
                     </div>
+                </section>
+                <section className='min-h-full'>
                     <div className='text-left flex mt-12'>
                         <img className='flex-1' src={image6} alt="" />
                         <div>
@@ -85,6 +89,8 @@ function Starkcore() {
                             <p className='text-left'>We had clear that our user wanted something they called “summary” or workspace to check the most relevant information for them all the time to keep tracking of the Quotes or Shipments they had.</p>
                         </div>
                     </div>
+                </section>
+                <section className='min-h-full'>
                     <div className='text-left mt-12'>
                         <div className='w-6/12'>
                             <h1 className='font-black text-4xl mt-28'>Iteration</h1>
@@ -95,6 +101,8 @@ function Starkcore() {
                             <img src={image8} alt="" />
                         </div>
                     </div>
+                </section>
+                <section className='min-h-full'>
                     <div className='text-left flex mt-12'>
                         <img className='flex-1 mr-9' src={image9} alt="" />
                         <div>
@@ -103,6 +111,8 @@ function Starkcore() {
                             <p className='text-left'>Here we had meetings with the stakeholders and some experts to make sure everything it’s covered.</p>
                         </div>
                     </div>
+                </section>
+                <section className='min-h-full'>
                     <div className='text-left flex mt-12'>
                         <div>
                             <h1 className='font-black text-4xl mt-28'>Step 4 - Prototype</h1>
@@ -110,7 +120,11 @@ function Starkcore() {
                         </div>
                         <img src={image10} alt="" />
                     </div>
+                </section>
+                <section className='min-h-full'>
                     <img className='mt-28' src={image11} alt="" />
+                </section>
+                <section className='min-h-full'>
                     <div className='text-left flex mt-12'>
                         <img src={image12} alt="" />
                         <div>
