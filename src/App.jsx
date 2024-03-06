@@ -3,8 +3,6 @@ import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
 import Card from './components/Card.jsx';
 
-import { Button } from "@nextui-org/react";
-
 import imagen1 from './assets/Home/ivan1.png';
 import imagen2 from './assets/Home/ivan2.png';
 import imagen3 from './assets/Home/ivan3.png';
@@ -18,6 +16,7 @@ import project6 from './assets/Home/Advanzees_Home.png';
 import project7 from './assets/Home/Kustee_Home.png';
 import project8 from './assets/Home/Iphinity_Home.png';
 
+import { Button } from "@nextui-org/react";
 import { Link } from "react-router-dom";
 
 function App() {
