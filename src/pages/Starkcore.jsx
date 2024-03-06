@@ -43,19 +43,19 @@ function Starkcore() {
                     <h2 className='text-lg'>Shipment View</h2>
                     <img className="mx-auto h-full mt-28" src={image3} alt="Ivan on a building" />
                 </section>
-                <section>
-                    <div>
-                        <h1 className='font-black text-4xl text-left'>Strategy</h1>
-                        <p className='text-left mt-5'>We used <b>DESIGN SPRINT</b>, In this methodology the product is analyzed and build alongside with the development team, with 5 phases where the first 3 are focused on research and the last 2 on prototyping and testing.</p>
-                        <div className="flex flex-row justify-between mt-12 font-poppins text-5xl">
-                            <p><span className='outline'>1.</span> Analysis</p>
-                            <p><span className='outline'>2.</span> Sketch</p>
-                            <p><span className='outline'>3.</span> Decide</p>
-                            <p><span className='outline'>4.</span> Prototype</p>
-                            <p><span className='outline'>5.</span> Test</p>
-                        </div>
+                <section className='min-h-full'>
+                    <h1 className='font-black text-4xl text-left'>Strategy</h1>
+                    <p className='text-left mt-5'>We used <b>DESIGN SPRINT</b>, In this methodology the product is analyzed and build alongside with the development team, with 5 phases where the first 3 are focused on research and the last 2 on prototyping and testing.</p>
+                    <div className="flex flex-row justify-between mt-12 font-poppins text-5xl">
+                        <p><span className='outline'>1.</span> Analysis</p>
+                        <p><span className='outline'>2.</span> Sketch</p>
+                        <p><span className='outline'>3.</span> Decide</p>
+                        <p><span className='outline'>4.</span> Prototype</p>
+                        <p><span className='outline'>5.</span> Test</p>
                     </div>
-                    <div className='text-left flex mt-12'>
+                </section>
+                <section>
+                <div className='text-left flex mt-12'>
                         <img className='flex-1' src={image4} alt="" />
                         <div className='flex-1'>
                             <h1 className='font-black text-4xl mt-28'>Step 1 - Analysis</h1>
