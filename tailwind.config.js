@@ -15,8 +15,11 @@ export default {
         'white': '#ffffff',
         'gray': '#E3E4E68C',
         'neutral': '#E3E4E6',
-        'buttonBorder': '#E3E4E68C' 
+        'buttonBorder': '#E3E4E68C'
       },
+      fontFamily: {
+        'poppins': ['"Poppins"'],
+      }
     },
 
   },
