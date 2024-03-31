@@ -24,32 +24,38 @@ function App() {
     title: 'DB Conseils',
     descriptionLight: 'An app made for a consultant company that provides financial and accounting advice in France, ',
     descriptionDark: ' the app keep track of the learning process of the company.',
-    image: project3
+    image: project3,
+    link: '/DbConseils'
   }, {
     title: 'CodeMagic',
     descriptionLight: 'One of the most important eSports team in france in the mobile gaming area, ',
     descriptionDark: 'this was the webpage for the champions of BrawlStars in Europe, Codemagic.',
-    image: project4
+    image: project4,
+    link: '/Codemagic'
   }, {
     title: 'C&C IMMOBILIER',
     descriptionLight: 'A beautiful website where you can find your dream house in Paris. ',
     descriptionDark: 'C&C is a company that sells luxury houses in a exclusive area of France.',
-    image: project5
+    image: project5,
+    link: '/Candc'
   }, {
     title: 'Advanseez',
     descriptionLight: 'A French consultancy enterprise specializing in offering advisory solutions has designed this ',
     descriptionDark: 'online application to elevate the quality of post-purchase support provided to its customer base',
-    image: project6
+    image: project6,
+    link: '/Advanseez'
   }, {
     title: 'Kustee',
     descriptionLight: 'A digital marketplace dedicated to the resale of reconditioned ',
     descriptionDark: 'second-hand iPhones and various other Apple products.',
-    image: project7
+    image: project7,
+    link: '/Kustee'
   }, {
     title: 'Iphinity',
     descriptionLight: 'Specializes in the provision of maintenance services ',
     descriptionDark: 'for specialized electronic equipment.',
-    image: project8
+    image: project8,
+    link: '/Iphinity'
   }];
 
   return (
@@ -106,13 +112,15 @@ function App() {
           </Card>
           <div className="flex flex-row gap-28 flex-wrap">
             {otherProjects.map(project => (
-              <Card key={project.title}>
-                <img className="w-80" src={ project.image } alt="Credit App UI & Design System" />
-                <h3 className="mb-4">{ project.title }</h3>
-                <p className="text-left text-4xl mb-4">
-                  { project.descriptionLight }
-                  <span className="font-semibold">{ project.descriptionDark }</span>
-                </p>
+              <Card key={project.title} >
+                <Link to={ project.link }>
+                  <img className="w-80" src={ project.image } alt="Credit App UI & Design System" />
+                  <h3 className="mb-4">{ project.title }</h3>
+                  <p className="text-left text-4xl mb-4">
+                    { project.descriptionLight }
+                    <span className="font-semibold">{ project.descriptionDark }</span>
+                  </p>
+                </Link>
               </Card>
             ))}
           </div>

@@ -29,6 +29,7 @@ function Creditapp() {
                         <p className='flex-1 text-left text-gray'>The challenge here was to make it easy to use with the same components that the old app had.</p>
                         <p className='flex-1 text-left'>Since the development team had a lot of components ready to implement, the redesign process was quick and easy.</p>
                     </div>
+                    <img className="mx-auto h-full pt-10" src={image2} alt="Ivan on a building" />
                 </section>
                 <section className='min-h-full'>
                     <h1 className='font-black text-4xl mt-28'>The Result</h1>
