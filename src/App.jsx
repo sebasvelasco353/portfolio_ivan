@@ -99,7 +99,7 @@ function App() {
               </p>
               <p className="text-left mb-4">Web App</p>
               <Button className="text-buttonBorder w-44 border-buttonBorder" variant="bordered">
-                VIEW WORK
+                <Link to="/Creditapp">VIEW WORK</Link>
               </Button>
             </div>
             <img className="h-96" src={ project2 } alt="Credit App UI & Design System" />
