@@ -10,7 +10,12 @@ import image6 from '../assets/Iphinity/6.png';
 import { Button } from "@nextui-org/react";
 import { Link } from "react-router-dom";
 
+import {useLayoutEffect} from 'react';
+
 function Iphinity() {
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
     return (
         <>
             <Header />

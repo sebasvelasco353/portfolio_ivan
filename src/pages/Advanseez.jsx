@@ -9,7 +9,12 @@ import image5 from '../assets/Advanseez/5.png';
 import { Button } from "@nextui-org/react";
 import { Link } from "react-router-dom";
 
+import {useLayoutEffect} from 'react';
+
 function Advanseez() {
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
     return (
         <>
             <Header />

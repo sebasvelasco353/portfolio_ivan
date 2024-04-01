@@ -7,8 +7,12 @@ import image4 from '../assets/Kustee/4.png';
 
 import { Button } from "@nextui-org/react";
 import { Link } from "react-router-dom";
+import {useLayoutEffect} from 'react';
 
 function Kustee() {
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
     return (
         <>
             <Header />

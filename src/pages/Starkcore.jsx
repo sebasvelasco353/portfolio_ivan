@@ -16,7 +16,12 @@ import image12 from '../assets/Starkcore/12.png';
 import { Button } from "@nextui-org/react";
 import { Link } from "react-router-dom";
 
+import {useLayoutEffect} from 'react';
+
 function Starkcore() {
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
     return (
         <>
             <Header />
