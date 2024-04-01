@@ -28,12 +28,12 @@ export default function Header() {
         </NavbarBrand>
 
         <NavbarItem>
-          <Link className="text-white" href="/">
+          <Link className="text-white" href="/portfolio_ivan/">
             HOME
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-white" href="/work">
+          <Link className="text-white" href="/portfolio_ivan/work">
             WORK
           </Link>
         </NavbarItem>
